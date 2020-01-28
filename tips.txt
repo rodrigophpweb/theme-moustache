@@ -1,0 +1,8 @@
+CEP dos Correios Ajax
+https://blog.mxcursos.com/consultar-cep-com-ajax-utilizando-jquery/
+
+Sendmail com Ajax
+https://stackoverflow.com/questions/16616250/form-submit-with-ajax-passing-form-data-to-php-without-page-refresh
+
+Criando README.MD
+https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8
