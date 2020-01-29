@@ -6,3 +6,19 @@ https://stackoverflow.com/questions/16616250/form-submit-with-ajax-passing-form-
 
 Criando README.MD
 https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8
+
+Cores do Projeto
+
+Menu
+	Degrade 
+		=> Cor Topo #333333
+		=> Cor Bot  #42413f
+
+h1, h2, h3, h4, h5, h6
+	=> #2f2627
+
+P
+	=> #322c2c
+
+Button
+	=> #5c5b60
