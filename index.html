@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+	<title>Landing Page - Agência Moustache</title>
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					  <a class="navbar-brand" href="#">
+					  	<img src="assets/images/logo-negative-moustache.png" alt="Agência Moustache">
+					  </a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav mr-auto">
+					      <li class="nav-item active">
+					        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Notícias</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Moustache</a>
+					      </li>
+					    </ul>
+					    <form class="form-inline my-2 my-lg-0">
+					      <input class="form-control mr-sm-2 rounded-0" type="search" placeholder="Buscar" aria-label="Buscar">				
+					    </form>
+					  </div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Banner -->
+	<section id="banner" class="d-flex align-items-center justify-content-center">
+		<div class="container">
+			<div class="row p-5">
+				<div class="col-lg-12 text-center">
+                    <img src="assets/images/slogan.png" alt="Sua Próxima Agência, Seu Próximo Resultado" class="m-5 img-fluid">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Carousel com Slick.JS -->
+	<section id="carousel">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center mt-5 mb-3">
+					<h2>Conteúdo Interno</h2>
+				</div>
+				<div class="col-lg-3">
+                    <div class="card rounded-0 shadow-sm bg-white">
+						<h3>Categoria A</h3>
+						<img class="card-img-top rounded-0" src="assets/images/card.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">Card title</h4>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="#" class="btn btn-primary btn-block rounded-0">Saiba Mais</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Formulário -->
+	<section id="formulario">
+		<div class="container">
+	        <div class="row pt-5 mt-4 mb-5">
+	            <div class="col-lg-12 text-center">
+	                <h2>Formulário de Contato</h2>
+	            </div>
+	        </div>
+	        <form method="post">
+	        	<div class="row">
+	                <div class="col-lg-6">
+	                    <input name="nome" type="text" class="form-control mb-3 rounded-0" placeholder="Seu nome">
+	                    <input name="email" type="email" class="form-control mb-3 rounded-0" placeholder="Seu e-mail" required>
+	                    <input name="telefone" type="text" class="form-control mb-3 rounded-0" placeholder="Seu telefone">
+	                    <input name="nascimento" type="text" class="form-control mb-3 rounded-0" placeholder="Data de Nascimento">
+	                </div>
+
+	                <div class="col-lg-6">
+	                    <input name="cep" type="text" class="form-control mb-3 rounded-0" placeholder="CEP">	                    
+	                    <div class="row mb-3">
+                            <input name="endereco" type="text" class="form-control ml-3 rounded-0 col-lg-8" placeholder="Endereço">
+	                        <input name="numero" type="text" class="form-control col-lg-3 ml-3 rounded-0" placeholder="Número">
+	                    </div>
+	                    <input name="bairro" type="text" class="form-control mb-3" placeholder="Bairro">
+	                    <div class="row">
+	                        <input name="cidade" type="text" class="form-control ml-3 rounded-0 col-lg-8" placeholder="Cidade">
+	                        <input name="estado" type="text" class="form-control col-lg-3 ml-3 rounded-0" placeholder="Estado">
+	                    </div>
+	                </div>
+
+	                <div class="col-lg-12 text-center mt-4 mb-5 pb-3">
+	                    <input name="enviar" type="submit" value="Enviar Dados" class="rounded-0 btn btn-primary btn-sm">
+	                </div>
+	        	</div>
+	        </form>
+	    </div>
+	</section>
+	
+	<!-- Footer -->
+	<footer>
+		<section id="localizacao">			
+			<div class="container">
+				<div class="row mt-5 mb-5 pb-5">
+					
+					<!-- Escritório de Atendimento -->
+					<div class="col-lg-4">
+						<h3>Escritório de Atendimento</h3>
+						<img src="assets/images/flag-brazil.png" alt="Brasil">
+						<p>Av. Lineu de Paula Machado, 1477<br>São Paulo - SP - CEP: 05601-001</p>
+					</div>
+
+					<!-- Núcleo de desenvolvimento -->
+					<div class="col-lg-4">
+						<h3>Núcleo de desenvolvimento</h3>
+						<img src="assets/images/flag-brazil.png" alt="Brasil">
+						<p>R. Com. Araújo, 499<br>Curitiba - PR - CEP: 80420-000</p>
+					</div>
+
+					<!-- Contas Internacionais -->
+					<div class="col-lg-4">
+						<h3>Contas Internacionais</h3>
+						<img src="assets/images/flag-usa.png" alt="Estados Unidos da Amércia">
+						<p>1615 South Congress Avenue,<br>Delray Beach - FL </p>
+					</div>		
+				</div>
+			</div>
+		</section>
+		
+		<section id="copyright">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-6">
+						<small>Copyright &reg; Agência Moustache LTDA. Todos os direitos reservados</small>
+					</div>
+					<div class="col-lg-6 text-right">
+						<ul>
+                			<li>
+                				<a href="https://agenciamoustache.com.br/politica-de-privacidade" title="Política de Privacidade">Política de Privacidade</a>
+                			</li>
+                			<li class="separator"> | </li>
+                			<li>
+                				<a href="https://agenciamoustache.com.br/mapa-do-site" title="Mapa do site">Mapa do site</a>
+                			</li>
+            			</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

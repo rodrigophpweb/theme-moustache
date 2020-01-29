@@ -1,11 +1,22 @@
 CEP dos Correios Ajax
 https://blog.mxcursos.com/consultar-cep-com-ajax-utilizando-jquery/
 
+Validation Form in jQuery
+https://www.sitepoint.com/basic-jquery-form-validation-tutorial/
+
 Sendmail com Ajax
 https://stackoverflow.com/questions/16616250/form-submit-with-ajax-passing-form-data-to-php-without-page-refresh
 
 Criando README.MD
 https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8
+
+Slick.js com Cards Bootstrap
+
+Ajax with WP_Query
+https://www.creare.co.uk/blog/simple-wp_query-ajax
+
+Create README.md Online
+https://dillinger.io/
 
 Cores do Projeto
 
@@ -21,4 +32,4 @@ P
 	=> #322c2c
 
 Button
-	=> #5c5b60
+	=> #5c5b60	

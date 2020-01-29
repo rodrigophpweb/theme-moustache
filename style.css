@@ -1,0 +1,167 @@
+/*
+Theme Name: Landing Page Moustache
+Text Domain: theme-moustache
+Version: 0.1
+Requires PHP: 5.2.4
+Description: Tema desenvolvido para a realização de teste para qualificar as habilidades em WordPress, PHP, Bootstrap, jQuery/Javascript, e atuar na equipe de desenvolvimento da Agência Moustache
+Tags: Home, one-column, custom-logo, custom-menu, editor-style, featured-images, full-width-template,  theme-options, 
+Author: Rodrigo Vieira Eufrasio da Silva
+Author URI: https://programadorweb.com.br
+Theme URI: https://programadorweb.com.br/theme-moustache/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+
+* Usando o Modelo de Padrões CSS conforme sua documentação:
+* CSS Coding Standards
+* https://make.wordpress.org/core/handbook/best-practices/coding-standards/css/
+*
+*/
+
+/*Font Lato => Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap')
+
+/*Reset*/
+	*{
+		padding: 0;
+		margin:0;
+		border:none;
+		outline: none;		
+	}
+
+/*Repetidores*/
+    body{
+    	font-family: 'Lato', sans-serif;
+    }
+
+	header {
+    background: #343a40;
+}
+	header nav {}
+	header .nav-brand {}
+	.navbar-dark .navbar-nav .nav-link:hover  {
+		color:#fff;
+	}
+
+	h2, h3, h4 {
+		font-weight: 700;
+	}
+	p {
+		color:#322c2c;
+		font-size:15px;
+	}
+
+	.btn-primary{
+        border:solid 1px #5c5b60;
+		background:#5c5b60;
+	}
+
+	.btn-primary:hover{
+		background:#fff;
+		color:#5c5b60;
+		border-color:#5c5b60;
+	}
+
+	header input[type="search"],
+	header input[type="search"]:focus{
+		border:none;
+		background-color: #1f1f1f;
+		color: #fff;
+		background-image: url('assets/images/lupe.png');
+		background-repeat: no-repeat;
+		background-position: 93% center;
+	}
+
+	header input[type="search"]::placeholder {
+        color:#fff;
+	}
+
+input.form-control.mr-sm-2.rounded-0 {}
+
+	
+
+	footer {}
+	footer #localizacao{}
+	footer #localizacao h3{
+		border-bottom: solid 1px #d9d9d9;
+		padding-bottom: 30px;
+		margin-bottom: 30px;}
+	footer #localizacao h3:after{
+		position: absolute;
+		background: #424041;
+		height: 1px;
+		content: '';
+		width: 10%;
+		top: 63px;
+		left: 45%;
+	}
+	footer #localizacao img{
+    float: left;
+    margin-right: 16px;
+    margin-top: 3px;
+}
+	footer #localizacao p{}
+
+	footer #copyright {
+		border-top: solid 1px #d9d9d9;
+		padding-top: 25px;
+	}
+	footer #copyright small{
+    font-size: 14px;
+}
+	footer #copyright ul {}
+	footer #copyright ul li {
+		list-style-type: none;
+		display: inline;
+	}
+	footer #copyright ul li.separator {
+    margin: 0 40px;
+}
+	footer #copyright ul li a{
+    color: #322c2c;
+    font-size: 14px;
+}
+
+/*home*/
+	
+	#banner {
+        height:555px;
+        background-image: url('assets/images/banner.jpg');       
+    }
+	#banner img {}
+	
+	#carousel {}
+	#carousel h2{}
+	#carousel .card {}
+	#carousel h3{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		padding: 10px 20px;
+		background:#221e41;
+		color: #fff;
+		font-size: 1rem;
+	}
+	#carousel img{}
+	#carousel .card.body{}
+	#carousel .card.body h4{}
+
+	#formulario {}
+	#formulario h2{}
+	#formulario input[type="text"]{
+
+	}
+	#formulario input[type="submit"]{
+		width:320px;
+		height:60px;
+	}
+
+/*Category*/
+
+/*Single*/
