@@ -80,7 +80,6 @@ $("input[name='telefone']").mask(celular, spOptions);
 
 
 // Autocomplete na busca em ajax
-
 jQuery(function($){
 	var searchRequest;
 	$("input[type='search']").autoComplete({
@@ -93,3 +92,23 @@ jQuery(function($){
 		}
 	});
 })
+
+
+
+// Enviando o formulário via Ajax
+$(function () {
+    var uri = $('input[name="uri"]').val()     
+    $('form[name=contato]').on('submit', function (e) {
+        e.preventDefault();
+		$.ajax({
+			type: 'post',
+			url: uri + '/post.php',
+			data: $('form[name="contato"]').serialize(),
+			success: function() {
+				alert('Seus dados foram enviados com sucesso!');
+            	$('.contato')[0].reset();
+			}
+      	});
+    });
+});
+

@@ -1,6 +1,3 @@
-CEP dos Correios Ajax
-https://blog.mxcursos.com/consultar-cep-com-ajax-utilizando-jquery/
-
 Validation Form in jQuery
 https://www.sitepoint.com/basic-jquery-form-validation-tutorial/
 
