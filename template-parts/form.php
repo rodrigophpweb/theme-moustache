@@ -1,50 +1,37 @@
+<!-- Formulário -->
 <section id="formulario">
     <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Lorem ipsum dolor sit amet</h2>
+        <div class="row pt-5 mt-4 mb-5">
+            <div class="col-lg-12 text-center">
+                <h2>Formulário de Contato</h2>
             </div>
         </div>
-
-        <div class="row">
-            <form action="" method="post">
-                
-                <div class="col-xl-6">
-                    <input name="nome" type="text" class="form-control" placeholder="Seu nome">
-                    <input name="email" type="email" class="form-control" placeholder="Seu e-mail">
-                    <input name="telefone" type="text" class="form-control" placeholder="Seu telefone">
-                    <input name="nascimento" type="text" class="form-control" placeholder="Data de Nascimento">
+        <form method="post">
+            <div class="row">
+                <div class="col-lg-6">
+                    <input name="nome" type="text" class="form-control mb-3 rounded-0" placeholder="Seu nome">
+                    <input name="email" type="email" class="form-control mb-3 rounded-0" placeholder="Seu e-mail" required>
+                    <input name="telefone" type="text" class="form-control mb-3 rounded-0" placeholder="Seu telefone">
+                    <input name="nascimento" type="text" class="form-control mb-3 rounded-0" placeholder="Data de Nascimento">
                 </div>
 
-                <div class="col-xl-6">
-                    <input name="cep" type="text" class="form-control" placeholder="cep">
+                <div class="col-lg-6">
+                    <input name="cep" type="text" class="form-control mb-3 rounded-0" placeholder="CEP">                        
+                    <div class="row mb-3">
+                        <input name="endereco" type="text" class="form-control ml-3 rounded-0 col-lg-8" placeholder="Endereço">
+                        <input name="numero" type="text" class="form-control col-lg-3 ml-3 rounded-0" placeholder="Número">
+                    </div>
+                    <input name="bairro" type="text" class="form-control mb-3" placeholder="Bairro">
+                    <div class="row">
+                        <input name="cidade" type="text" class="form-control ml-3 rounded-0 col-lg-8" placeholder="Cidade">
+                        <input name="estado" type="text" class="form-control col-lg-3 ml-3 rounded-0" placeholder="Estado">
+                    </div>
                 </div>
 
-                <div class="col-xl-4">
-                    <input name="endereco" type="text" class="form-control" placeholder="endereco">
+                <div class="col-lg-12 text-center mt-4 mb-5 pb-3">
+                    <input name="enviar" type="submit" value="Enviar Dados" class="rounded-0 btn btn-primary btn-sm">
                 </div>
-
-                <div class="col-xl-2">
-                    <input name="numero" type="text" class="form-control" placeholder="Número">
-                </div>
-
-                <div class="col-xl-6">
-                    <input name="bairro" type="text" class="form-control" placeholder="bairro">
-                </div>
-
-                <div class="col-xl-4">
-                    <input name="cidade" type="text" class="form-control" placeholder="cidade">
-                </div>
-
-                <div class="col-xl-2">
-                    <input name="estado" type="text" class="form-control" placeholder="Estado">
-                </div>
-
-                <div class="col-xl-12 text-center">
-                    <input name="enviar" type="submit" value="Enviar Dados">
-                </div>
-            </form>
-        </div>
+            </div>
+        </form>
     </div>
 </section>
