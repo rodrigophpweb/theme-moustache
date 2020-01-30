@@ -41,17 +41,31 @@ with others.
     }
 
 	header {
-    background: #343a40;
-}
-	header nav {}
-	header .nav-brand {}
+    	background: #343a40;
+	}
+
+	header .custom-logo-link {
+		margin-right: 10px;
+	}
 	.navbar-dark .navbar-nav .nav-link:hover  {
 		color:#fff;
+	}
+
+	header nav #menu-header li a {
+		margin: 0 10px;
+		text-decoration: none;
+		color:rgba(255,255,255,.5);
+	}
+
+	header nav #menu-header .current_page_item a,
+	header nav #menu-header li a:hover {
+		color: #fff;
 	}
 
 	h2, h3, h4 {
 		font-weight: 700;
 	}
+	
 	p {
 		color:#322c2c;
 		font-size:15px;
@@ -82,7 +96,7 @@ with others.
         color:#fff;
 	}
 
-input.form-control.mr-sm-2.rounded-0 {}
+	input.form-control.mr-sm-2.rounded-0 {}
 
 	
 

@@ -11,16 +11,15 @@
 
 // Chamando os Arquivos CSS e JS
 function files_scripts(){
-  wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() .'assets/bootstrap/bootstrap.min.css');
+  wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() .'/assets/css/bootstrap.min.css');
   wp_enqueue_style( 'style.css', get_stylesheet_uri());  
   
   wp_deregister_script('jquery'); //Desregistrando versão antiga do jQuery
-  wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.4.1.min.js', array(), null, true);
-  wp_enqueue_script( 'popper_js', get_template_directory_uri() .'assets/bootstrap/popper.min.js', array('jquery'), '', true);    
-  wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() .'assets/bootstrap/bootstrap.min.js', array('jquery'), '', true);  
-  
-  // wp_enqueue_script( 'hover-dropdown', get_template_directory_uri().'/assets/js/hover-dropdown.js', array('jquery'), '', true);  
-  
+  wp_enqueue_script('jquery', get_template_directory_uri() .'/assets/js/jquery-3.4.1.min.js', array(), null, true);
+  wp_enqueue_script( 'popper_js', get_template_directory_uri() .'/assets/js/popper.min.js', array('jquery'), '', true);    
+  wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() .'/assets/js/bootstrap.min.js', array('jquery'), '', true);  
+  wp_enqueue_script( 'jquery_mask_js', get_template_directory_uri() .'/assets/js/jquery.mask.js', array('jquery'), '', true);
+  wp_enqueue_script( 'scripts_js', get_template_directory_uri() .'/assets/js/scripts.js', array('jquery'), '', true);  
 }
 add_action('wp_enqueue_scripts', 'files_scripts');
 

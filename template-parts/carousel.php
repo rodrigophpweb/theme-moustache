@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center mt-5 mb-3">
-				<h2>Conteúdo Interno</h2>
+				<h2>Notícias</h2>
 			</div>
 			<div class="col-lg-3">
                 <div class="card rounded-0 shadow-sm bg-white">

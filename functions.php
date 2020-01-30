@@ -94,12 +94,11 @@ function moustache_theme_supports(){
 	 */
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'custom-logo' );
+	add_theme_support( 'title-tag' );
 	add_theme_support( 'html5', 
 		array( 'search-form',) 
 	);
 }
-
-
 
 /**
  * Moustache Nav Menus
@@ -118,6 +117,15 @@ function moustache_nav_menus(){
 	 */
 	register_nav_menu( 'moustache-menu-header', 'Menu do cabeçalho.' );
 }
+
+//Adicionando classes para li do menu
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
 
 //Remover Versão do WordPress
