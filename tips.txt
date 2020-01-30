@@ -1,5 +1,3 @@
-CEP dos Correios Ajax
-https://blog.mxcursos.com/consultar-cep-com-ajax-utilizando-jquery/
 
 Validation Form in jQuery
 https://www.sitepoint.com/basic-jquery-form-validation-tutorial/
@@ -12,8 +10,8 @@ https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85
 
 Slick.js com Cards Bootstrap
 
-Ajax with WP_Query
-https://www.creare.co.uk/blog/simple-wp_query-ajax
+Auto Complete JQuery Ajax
+https://gist.github.com/jaredatch/79e57c68438841b6c09b3ad4c12600f6
 
 Create README.md Online
 https://dillinger.io/
