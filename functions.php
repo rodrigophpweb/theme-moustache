@@ -64,6 +64,9 @@ function moustache_setup_theme(){
 	 */
 	add_action( 'the_generator', '__return_false' ); 
 	// Segurança: Remove a meta tag generator do cabeçalho
+
+	add_filter( 'excerpt_length', 'moustache_excerpt_length' ); 
+	// Filtro que define a quantidade de palavras exibidas em um resumo
 	
 	include_once('inc/style-scripts.php');     
 	// Chamar arquivo responsável por carregar os script e estilos do site
@@ -117,6 +120,43 @@ function moustache_nav_menus(){
 	 */
 	register_nav_menu( 'moustache-menu-header', 'Menu do cabeçalho.' );
 }
+
+
+if ( ! function_exists( 'moustache_apiki_excerpt_length' ) ) :
+	/**
+	 * Moustache Excerpt Length
+	 * 
+	 * Chamada pelo hook de filtro excerpt_length, utilizada para customizar o tamanho do 
+	 * resumo dos posts.
+	 * 
+	 * @param int $length O número de palavras que serão exibidas pelo resumo, por padrão 55.
+	 * @since Standard
+	 * @link http://codex.wordpress.org/Plugin_API/Filter_Reference/excerpt_length
+	 */
+	function moustache_excerpt_length( $length )
+	{
+		$length = 20;
+
+		/**
+		 * Tag condicional do WordPress, que retorna um verdadeiro/falso, testa se a 
+		 * página em exibição é a página de listagem de posts por tag.
+		 * 
+		 * @since Standard
+		 * @link https://codex.wordpress.org/Function_Reference/is_tag
+		 */
+		if ( is_home() or is_category() or is_search() ) :
+			$length = 22;
+		endif;
+
+		/**
+		 * Notem que todas as funções que são chamadas dentro de um hook de filtro devem
+		 * retornar um valor.
+		 * 
+		 * @since Standard
+		 */
+		return $length;
+	}
+endif;
 
 
 /**
