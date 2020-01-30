@@ -118,6 +118,36 @@ function moustache_nav_menus(){
 	register_nav_menu( 'moustache-menu-header', 'Menu do cabeçalho.' );
 }
 
+
+/**
+  * Função que lista todos os posts e paginas utilizando a WP_Query e faz requisição em Ajax
+  * @since Essential
+  * @link  https://developer.wordpress.org/reference/classes/wp_query/
+  *
+  */
+function ajax_search() {
+	$args = new WP_Query( array(
+		'post_type'     => array( 'post', 'page' ),
+		'post_status'   => 'publish',
+		'nopaging'      => true,
+		'posts_per_page'=> -1,
+		's'             => stripslashes( $_POST['search'] ),
+	) );
+
+	$items = array();
+
+	if ( !empty( $args->posts ) ) {
+		foreach ( $args->posts as $result ) {
+			$items[] = $result->post_title;
+		}
+	}
+
+	wp_send_json_success( $items );
+}
+add_action( 'wp_ajax_search_site',        'ajax_search' );
+add_action( 'wp_ajax_nopriv_search_site', 'ajax_search' );
+
+
 //Adicionando classes para li do menu
 function add_additional_class_on_li($classes, $item, $args) {
     if(isset($args->add_li_class)) {
