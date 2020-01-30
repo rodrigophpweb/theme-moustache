@@ -16,6 +16,9 @@ https://gist.github.com/jaredatch/79e57c68438841b6c09b3ad4c12600f6
 Create README.md Online
 https://dillinger.io/
 
+Insert Widget in footer
+https://www.tipsandtricks-hq.com/how-to-add-widgets-to-wordpress-themes-footer-1033
+
 Cores do Projeto
 
 Menu
