@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 76fdef1b1c7f6a4f733520133994d8bcb159021e
 Validation Form in jQuery
 https://www.sitepoint.com/basic-jquery-form-validation-tutorial/
 

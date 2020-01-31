@@ -66,8 +66,7 @@ $(document).ready(function(){
 	$("input[name='cep']").mask('00000-000');
 });
 
-// Para um digito a mais no caso de celular
-
+// Para um digito a mais no caso de celular for de São Paulo
 var celular = function (val) {
   return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
 },
@@ -78,3 +77,38 @@ spOptions = {
 };
 
 $("input[name='telefone']").mask(celular, spOptions);
+
+
+// Autocomplete na busca em ajax
+jQuery(function($){
+	var searchRequest;
+	$("input[type='search']").autoComplete({
+		minChars: 3,
+		source: function(term, suggest){
+			try { searchRequest.abort(); } catch(e){}
+			searchRequest = $.post(scripts_js.ajax, { search: term, action: 'search_site' }, function(res) {
+				suggest(res.data);
+			});
+		}
+	});
+})
+
+
+
+// Enviando o formulário via Ajax
+$(function () {
+    var uri = $('input[name="uri"]').val()     
+    $('form[name=contato]').on('submit', function (e) {
+        e.preventDefault();
+		$.ajax({
+			type: 'post',
+			url: uri + '/post.php',
+			data: $('form[name="contato"]').serialize(),
+			success: function() {
+				alert('Seus dados foram enviados com sucesso!');
+            	$('.contato')[0].reset();
+			}
+      	});
+    });
+});
+

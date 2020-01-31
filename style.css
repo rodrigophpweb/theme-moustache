@@ -71,7 +71,8 @@ with others.
 		font-size:15px;
 	}
 
-	.btn-primary{
+	.btn-primary,
+	.btn-primary:not(:disabled):not(.disabled):active{
         border:solid 1px #5c5b60;
 		background:#5c5b60;
 	}
@@ -100,13 +101,12 @@ with others.
 
 	
 
-	footer {}
-	footer #localizacao{}
-	footer #localizacao h3{
+	#localizacao{}
+	#localizacao h3{
 		border-bottom: solid 1px #d9d9d9;
 		padding-bottom: 30px;
 		margin-bottom: 30px;}
-	footer #localizacao h3:after{
+	#localizacao h3:after{
 		position: absolute;
 		background: #424041;
 		height: 1px;
@@ -115,12 +115,13 @@ with others.
 		top: 63px;
 		left: 45%;
 	}
-	footer #localizacao img{
-    float: left;
-    margin-right: 16px;
-    margin-top: 3px;
-}
-	footer #localizacao p{}
+	#localizacao img{
+	    float: left;
+	    margin-right: 16px;
+	    margin-top: 3px;
+	}
+	
+	#localizacao p{}
 
 	footer #copyright {
 		border-top: solid 1px #d9d9d9;
