@@ -16,17 +16,26 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <input name="cep" type="text" class="limpar form-control mb-3 rounded-0" placeholder="CEP">                        
-                    <div class="row mb-3">
-                        <input name="endereco" type="text" class="limpar form-control ml-3 rounded-0 col-lg-8" placeholder="Endereço">
-                        <input name="numero" type="text" class="limpar form-control col-lg-3 ml-3 rounded-0" placeholder="Número">
+                    <input name="cep" type="text" class="limpar form-control mb-3 rounded-0" placeholder="CEP">
+                    <div class="form-row">
+                        <div class="col-lg-9 mb-3">
+                            <input name="endereco" type="text" class="limpar form-control rounded-0 " placeholder="Endereço">
+                        </div>
+                        <div class="col-lg-3 mb-3">
+                            <input name="numero" type="text" class="limpar form-control rounded-0" placeholder="Número">
+                        </div>
                     </div>
-                    <input name="bairro" type="text" class="limpar form-control mb-3" placeholder="Bairro">
-                    <div class="row">
-                        <input name="cidade" type="text" class="limpar form-control ml-3 rounded-0 col-lg-8" placeholder="Cidade">
-                        <input name="estado" type="text" class="limpar form-control col-lg-3 ml-3 rounded-0" placeholder="Estado">
-                        <input name="uri"    type="hidden" value="<?php echo get_template_directory_uri();?>">
+                    <input name="bairro" type="text" class="limpar form-control rounded-0 mb-3" placeholder="Bairro">
+                    <div class="form-row">
+                        <div class="col-lg-9 mb-3">
+                            <input name="cidade" type="text" class="limpar form-control rounded-0 " placeholder="Cidade">
+                        </div>
+                        <div class="col-lg-3 mb-3">
+                            <input name="estado" type="text" class="limpar form-control rounded-0" placeholder="Estado">
+                        </div>                        
                     </div>
+                </div>                        
+                    <input name="uri" type="hidden" value="<?php echo get_template_directory_uri();?>">
                 </div>
 
                 <div class="col-lg-12 text-center mt-4 mb-5 pb-3">

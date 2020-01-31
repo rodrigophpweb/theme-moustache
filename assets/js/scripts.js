@@ -60,11 +60,15 @@ $(document).ready(function() {
 	});
 });
 
+
+
 // Mascara de Entrada usando JQuery Mask
 $(document).ready(function(){
 	$("input[name='nascimento']").mask("00/00/0000");
 	$("input[name='cep']").mask('00000-000');
 });
+
+
 
 // Para um digito a mais no caso de celular for de São Paulo
 var celular = function (val) {
@@ -75,8 +79,8 @@ spOptions = {
       field.mask(celular.apply({}, arguments), options);
     }
 };
-
 $("input[name='telefone']").mask(celular, spOptions);
+
 
 
 // Autocomplete na busca em ajax
@@ -112,3 +116,57 @@ $(function () {
     });
 });
 
+
+
+// Slick com Cards Bootstrap
+$(document).ready(function(){
+	$('.slider').slick({
+	  dots: true,
+	  infinite: false,
+	  speed: 300,
+	  slidesToShow: 3,
+	  slidesToScroll: 3,
+	  responsive: [
+	    {
+	      breakpoint: 1024,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 3,
+	        infinite: true,
+	        dots: true
+	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 2
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1
+	      }
+	    }
+	    // You can unslick at a given breakpoint now by adding:
+	    // settings: "unslick"
+	    // instead of a settings object
+	  ]
+	});
+});
+
+// Ajustar os Cards do Boostrap com Slick.JS
+cards = $('.card-body');
+var maxHeight = 0;
+
+for (var i = 0; i < cards.length; i++) {
+  if (maxHeight < $(cards[i]).outerHeight()) {
+    maxHeight = $(cards[i]).outerHeight();
+  }
+}
+
+for (var i = 0; i < cards.length; i++) {
+  $(cards[i]).height(maxHeight);
+}

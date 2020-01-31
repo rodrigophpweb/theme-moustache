@@ -69,6 +69,7 @@ with others.
 	p {
 		color:#322c2c;
 		font-size:15px;
+		font-weight: 400;
 	}
 
 	.btn-primary,
@@ -97,15 +98,12 @@ with others.
         color:#fff;
 	}
 
-	input.form-control.mr-sm-2.rounded-0 {}
-
-	
-
-	#localizacao{}
 	#localizacao h3{
 		border-bottom: solid 1px #d9d9d9;
 		padding-bottom: 30px;
-		margin-bottom: 30px;}
+		margin-bottom: 30px;
+	}
+	
 	#localizacao h3:after{
 		position: absolute;
 		background: #424041;
@@ -115,33 +113,38 @@ with others.
 		top: 63px;
 		left: 45%;
 	}
+	
 	#localizacao img{
 	    float: left;
 	    margin-right: 16px;
 	    margin-top: 3px;
 	}
-	
-	#localizacao p{}
 
 	footer #copyright {
 		border-top: solid 1px #d9d9d9;
 		padding-top: 25px;
 	}
 	footer #copyright small{
-    font-size: 14px;
-}
-	footer #copyright ul {}
+    	font-size: 14px;
+	}
+	
+	footer #copyright ul {
+		padding: 0;
+	}
+
 	footer #copyright ul li {
 		list-style-type: none;
 		display: inline;
 	}
+	
 	footer #copyright ul li.separator {
-    margin: 0 40px;
-}
+    	margin: 0 30px;
+	}
+	
 	footer #copyright ul li a{
-    color: #322c2c;
-    font-size: 14px;
-}
+    	color: #322c2c;
+    	font-size: 14px;
+	}
 
 /*home*/
 	
@@ -149,12 +152,81 @@ with others.
         height:555px;
         background-image: url('assets/images/banner.jpg');       
     }
-	#banner img {}
 	
-	#carousel {}
-	#carousel h2{}
-	#carousel .card {}
-	#carousel h3{
+	
+	.s_container {
+  		margin: 0 auto;
+  		padding: 0 40px 0 40px;
+  		width: 100%;
+	}
+
+
+	.slick-track {
+	  display: flex !important;
+	}
+
+	.card {
+		height: 370px;
+	}
+
+	.slick-slide {
+	  margin: 12px;
+	  height: auto;
+	  padding: 0 10px !important;
+	}
+
+	.slick-frame {
+	  visibility: hidden;
+	}
+
+	.slick-prev, .slick-next {
+		top:420px;
+		border:solid 1px #5b5b5d;
+		width: 32px;
+		height: 32px;
+	}
+
+	.slick-prev {
+		left: 25%;
+	}
+
+	.slick-next {
+		right: 25%;
+	}
+
+	.slick-prev.slick-disabled:before, 
+	.slick-next.slick-disabled:before {
+		opacity: unset;
+	}
+
+	.slick-prev:before, 
+	.slick-next:before {
+		color:#000;
+		line-height: 1;
+		font-size: 18px;
+	}
+
+	.slick-prev:before {
+		content: '<'
+	}
+
+	.slick-next:before {
+		content: '>'
+	}
+
+	.slick-dots {
+		display: none !important;
+	}
+
+	.slick-dots li button {
+		width: 53px;
+		height: 12px;
+	}
+
+	#carousel h3,
+	#categoria h3,
+	#carousel h3 a,
+	#categoria h3 a{
 		position: absolute;
 		top: 10px;
 		left: 10px;
@@ -162,21 +234,25 @@ with others.
 		background:#221e41;
 		color: #fff;
 		font-size: 1rem;
+		width: max-content;
 	}
-	#carousel img{}
-	#carousel .card.body{}
-	#carousel .card.body h4{}
-
-	#formulario {}
-	#formulario h2{}
-	#formulario input[type="text"]{
-
-	}
+	
+	
 	#formulario input[type="submit"]{
 		width:320px;
 		height:60px;
+		font-size: 1rem;
 	}
 
-/*Category*/
+	@media (max-width: 992px) {
+		#copyright ul {
+			text-align: left;
+		}
+	}
 
-/*Single*/
+	@media (max-width: 391px) {
+		#localizacao div div div:nth-child(2) h3:after {
+			top:96px;
+		}
+	
+	}

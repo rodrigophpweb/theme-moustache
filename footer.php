@@ -2,19 +2,19 @@
 	<!-- Footer -->
 	<footer>	
 		<section id="copyright">
-			<div class="container-fluid">
+			<div class="container-fluid mx-0">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-12 col-lg-6 text-xs-center">
 						<small>Copyright &reg; Agência Moustache LTDA. Todos os direitos reservados</small>
 					</div>
-					<div class="col-lg-6 text-right">
+					<div class="col-12 col-lg-6 text-right text-xs-left">
 						<ul>
                 			<li>
-                				<a href="https://agenciamoustache.com.br/politica-de-privacidade" title="Política de Privacidade">Política de Privacidade</a>
+                				<a href="https://agenciamoustache.com.br/politica-de-privacidade" target="_blank" title="Política de Privacidade">Política de Privacidade</a>
                 			</li>
                 			<li class="separator"> | </li>
                 			<li>
-                				<a href="https://agenciamoustache.com.br/mapa-do-site" title="Mapa do site">Mapa do site</a>
+                				<a href="https://agenciamoustache.com.br/mapa-do-site" target="_blank" title="Mapa do site">Mapa do site</a>
                 			</li>
             			</ul>
 					</div>
@@ -22,12 +22,6 @@
 			</div>
 		</section>
 	</footer>
-
-	<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <?php wp_footer();?>
 </body>
 </html>

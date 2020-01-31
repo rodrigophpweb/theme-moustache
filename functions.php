@@ -198,6 +198,38 @@ function add_additional_class_on_li($classes, $item, $args) {
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
 
+
+// Registrando sidebar 
+register_sidebar( array(
+	'name' 			=> 'Sidebar 1',
+	'id' 			=> 'sidebar-1',
+	'description' 	=> 'Escritório de Atendimento',
+	'before_widget'	=> '<div class="col-lg-4">',
+	'after_widget' 	=> '</div>',
+	'before_title' 	=> '<h3>',
+	'after_title' 	=> '</h3>',
+));
+
+register_sidebar( array(
+	'name' 			=> 'Sidebar 2',
+	'id' 			=> 'sidebar-2',
+	'description' 	=> 'Núcleo de desenvolvimento',
+	'before_widget'	=> '<div class="col-lg-4">',
+	'after_widget' 	=> '</div>',
+	'before_title' 	=> '<h3>',
+	'after_title' 	=> '</h3>',
+));
+
+register_sidebar( array(
+	'name' 			=> 'Sidebar 3',
+	'id' 			=> 'sidebar-3',
+	'description' 	=> 'Contas Internacionais',
+	'before_widget'	=> '<div class="col-lg-4">',
+	'after_widget' 	=> '</div>',
+	'before_title' 	=> '<h3>',
+	'after_title' 	=> '</h3>',
+));
+
 //Remover Versão do WordPress
 function remove_version() {
 	return '';
