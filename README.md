@@ -1,16 +1,18 @@
 # Teste para Agência Moustache
 
 O teste como objetivo avaliar sua lógica de programação, as soluções dadas para a chamada dos campos dinâmicos. 
-
 Sua descrição é:
+
 # Para Front-End: 
 
 - Criar o front-end responsivo da landing page moustache, com 5 seções: Menu, Banner, Carrossel de matérias, um formulário, e lista de informações.
+
 
 # Para Full-Stack: 
 - Criar a landing page moustache responsiva em Wordpress, com 5 seções:  Menu, Banner, Carrossel de matérias, um formulário, e lista de informações.
 
 O Teste é divido em 2 Etapas:
+
 
 # Etapa 01 
 
@@ -29,6 +31,7 @@ Para Full-Stack:
 - Colocar código em repositório aberto
 - Ao menos uma chamada em AJAX
 
+
 # Etapa 02
 Para Front-End:
 - Subir código em um repositório aberto.
@@ -39,6 +42,7 @@ Para Full-Stack:
 - Uso correto da Estrutura Wordpress
 - Uso correto de WP Query e Taxonomias
 - Formulário e Cards em AJAX
+
 
 # Sobre o Projeto
 
@@ -62,21 +66,21 @@ pode ser até que esta bem assim.
 Se continuar fazendo o que sempre fez,...
 >Daisahu Iheda
 
+
 ### Tecnologias Usadas no Projeto
 Para a Realização deste projeto foi utilizadas algumas bibliotecas
 
-| Plugin | README |
-| ------ | ------ |
-| HTML5 | [plugins/dropbox/README.md][PlDb] |
-| CSS | [plugins/dropbox/README.md][PlDb] |
-| Bootstrap | [plugins/googledrive/README.md][PlGd] |
-| PHP | [plugins/googledrive/README.md][PlGd] |
-| jQuery | [plugins/dropbox/README.md][PlDb] |
-| Pooper | [plugins/github/README.md][PlGh] |
-| Jquery Mask | [plugins/onedrive/README.md][PlOd] |
-| Jquery Auto Complete | [plugins/medium/README.md][PlMe] |
-| Slick.JS | [plugins/googleanalytics/README.md][PlGa] |
-| WordPress | [plugins/googleanalytics/README.md][PlGa] |
+  - HTML5
+  - CSS 
+  - Bootstrap 
+  - PHP
+  - jQuery
+  - Pooper
+  - Jquery Mask
+  - Jquery Auto Complete
+  - Slick.JS 
+  - WordPress
+
 
 ### Arquivos do Projeto
 O Tema Moustache é composto pelos seguintes arquivos:
