@@ -9,20 +9,20 @@
         <form name="contato" class="contato">
             <div class="row">
                 <div class="col-lg-6">
-                    <input name="nome" type="text" class="limpar form-control mb-3 rounded-0" placeholder="Seu nome">
+                    <input name="nome" type="text" class="limpar form-control mb-3 rounded-0" placeholder="Seu nome" required>
                     <input name="email" type="email" class="limpar form-control mb-3 rounded-0" placeholder="Seu e-mail" required>
-                    <input name="telefone" type="text" class="limpar form-control mb-3 rounded-0" placeholder="Seu telefone">
-                    <input name="nascimento" type="text" class="limpar form-control mb-3 rounded-0" placeholder="Data de Nascimento">
+                    <input name="telefone" type="text" class="limpar form-control mb-3 rounded-0" placeholder="Seu telefone" required>
+                    <input name="nascimento" type="text" class="limpar form-control mb-3 rounded-0" placeholder="Data de Nascimento" required>
                 </div>
 
                 <div class="col-lg-6">
-                    <input name="cep" type="text" class="limpar form-control mb-3 rounded-0" placeholder="CEP">
+                    <input name="cep" type="text" class="limpar form-control mb-3 rounded-0" placeholder="CEP" required>
                     <div class="form-row">
                         <div class="col-lg-9 mb-3">
                             <input name="endereco" type="text" class="limpar form-control rounded-0 " placeholder="Endereço">
                         </div>
                         <div class="col-lg-3 mb-3">
-                            <input name="numero" type="text" class="limpar form-control rounded-0" placeholder="Número">
+                            <input name="numero" type="text" class="limpar form-control rounded-0" placeholder="Número" required>
                         </div>
                     </div>
                     <input name="bairro" type="text" class="limpar form-control rounded-0 mb-3" placeholder="Bairro">
