@@ -6,7 +6,7 @@
 	<title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; <?php } ?> <?php wp_title(); ?></title>
 	<?php wp_head();?>
 </head>
-<body>
+<body <?php body_class();?>>
 	<header>
 		<div class="container">
 			<div class="row">

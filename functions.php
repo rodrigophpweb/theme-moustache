@@ -49,6 +49,7 @@ function moustache_setup_theme(){
 	 * @since Standard
 	 */
 	moustache_theme_supports();
+	moustache_image_sizes();
 	moustache_nav_menus();
 
 	/**
@@ -104,6 +105,28 @@ function moustache_theme_supports(){
 }
 
 /**
+ * Moustache Image Sizes
+ * 
+ * Função do tema criada para adicionar os tamanhos de imagem necessários. Não é 
+ * chamada por nenhum hook, mas pela função de setup do tema.
+ * 
+ * @since Standard
+ */
+function moustache_image_sizes(){
+	/**
+	 * Adiciona os tamanhos de imagem do tema. Define-se um nome para o tamanho, 
+	 * width (largura), height (altura) e se o WordPress irá realizar o crop da imagem
+	 * 
+	 * @since Essential
+	 * @link http://codex.wordpress.org/Function_Reference/add_image_size
+	 */
+	add_image_size( 'moustache-carousel', 391, 147, true );
+	add_image_size( 'moustache-noticias', 253, 190, true );
+}
+
+/**
+
+/**
  * Moustache Nav Menus
  * 
  * Função do tema criada para registrar as áreas de menu. Não é chamada por nenhum
@@ -144,8 +167,12 @@ if ( ! function_exists( 'moustache_apiki_excerpt_length' ) ) :
 		 * @since Standard
 		 * @link https://codex.wordpress.org/Function_Reference/is_tag
 		 */
-		if ( is_home() or is_category() or is_search() ) :
+		if ( is_front_page()) :
 			$length = 22;
+		elseif(is_page('noticias')):
+			$length = 30;
+		elseif(is_category() or is_search()):
+			$length = 15;
 		endif;
 
 		/**
@@ -197,6 +224,13 @@ function add_additional_class_on_li($classes, $item, $args) {
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
+
+//Removendo as dimensoens das imagens geradas pelo the_post_thumbnail
+function remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
+    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+    return $html;
+}
+add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10, 3 );
 
 
 // Registrando sidebar 

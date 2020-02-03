@@ -84,6 +84,16 @@ with others.
 		border-color:#5c5b60;
 	}
 
+	header input[type="search"]{
+		width: 225px;
+		-webkit-transition: width 0.4s ease-in-out;
+  		transition: width 0.4s ease-in-out;
+	}
+
+	header input[type=search]:focus {
+  		width: 100%;
+	}
+
 	header input[type="search"],
 	header input[type="search"]:focus{
 		border:none;
@@ -92,6 +102,7 @@ with others.
 		background-image: url('assets/images/lupe.png');
 		background-repeat: no-repeat;
 		background-position: 93% center;
+
 	}
 
 	header input[type="search"]::placeholder {
@@ -118,6 +129,11 @@ with others.
 	    float: left;
 	    margin-right: 16px;
 	    margin-top: 3px;
+	}
+
+	.category #categoria .card-body,
+	.page-id-11 #carousel .card-body  {
+		height: 500 !important
 	}
 
 	footer #copyright {
@@ -165,7 +181,7 @@ with others.
 	  display: flex !important;
 	}
 
-	.card {
+	.home .card {
 		height: 370px;
 	}
 
@@ -222,10 +238,19 @@ with others.
 		width: 53px;
 		height: 12px;
 	}
+	
 
-	#carousel h3,
-	#categoria h3,
-	#carousel h3 a,
+	#carousel header,
+	#categoria header {
+		background: none;
+	}
+
+	#carousel  h3,
+	#categoria h3 {
+		position: absolute;
+	}	
+
+	#carousel header h3 a,
 	#categoria h3 a{
 		position: absolute;
 		top: 10px;
@@ -244,6 +269,30 @@ with others.
 		font-size: 1rem;
 	}
 
+
+/*Noticias*/
+
+	.page-id-11 #carousel h4 {
+		font-size: 1.2rem;
+	}
+
+	.page-id-11 #carousel .card {
+
+	}	
+
+
+/*Cateogry*/
+
+	.category #categoria h4 {
+		font-size: 1.2rem;
+	}
+
+/*Single*/
+	#single header {
+		background: #fff;
+	}
+	
+/*Media Query*/
 	@media (max-width: 992px) {
 		#copyright ul {
 			text-align: left;
