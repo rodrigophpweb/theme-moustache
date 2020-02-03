@@ -10,11 +10,11 @@
 					<div class="col-12 col-lg-6 text-right text-xs-left">
 						<ul>
                 			<li>
-                				<a href="https://agenciamoustache.com.br/politica-de-privacidade" target="_blank" title="Política de Privacidade">Política de Privacidade</a>
+                				<a href="https://agenciamoustache.com.br/politica-de-privacidade" target="_blank" title="Política de Privacidade" rel="noopener">Política de Privacidade</a>
                 			</li>
                 			<li class="separator"> | </li>
                 			<li>
-                				<a href="https://agenciamoustache.com.br/mapa-do-site" target="_blank" title="Mapa do site">Mapa do site</a>
+                				<a href="https://agenciamoustache.com.br/mapa-do-site" target="_blank" title="Mapa do site" rel="noopener">Mapa do site</a>
                 			</li>
             			</ul>
 					</div>
